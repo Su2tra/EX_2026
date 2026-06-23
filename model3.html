@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Просмотр робота</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Просмотр модели</h1>
+        <a href="index.html" class="btn">Назад</a>
+    </header>
+
+    <main class="model_visual">
+        <model-viewer
+        src="models/model3_robot.glb"
+        alt="Модель робота"
+        auto-rotate
+        camera-controls
+        shadow-intensity="1"
+        ></model-viewer>
+
+        <a href="models/model3_robot.glb" download="robot.glb" class="btn">Скачать</a>
+    </main>
+</body>
+</html>
